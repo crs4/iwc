@@ -1,0 +1,122 @@
+{
+    "@context": [
+        "https://w3id.org/ro/crate/1.1/context",
+        {
+            "JenkinsService": "https://w3id.org/ro/terms/test#JenkinsService",
+            "PlanemoEngine": "https://w3id.org/ro/terms/test#PlanemoEngine",
+            "TestDefinition": "https://w3id.org/ro/terms/test#TestDefinition",
+            "TestInstance": "https://w3id.org/ro/terms/test#TestInstance",
+            "TestService": "https://w3id.org/ro/terms/test#TestService",
+            "TestSuite": "https://w3id.org/ro/terms/test#TestSuite",
+            "TravisService": "https://w3id.org/ro/terms/test#TravisService",
+            "definition": "https://w3id.org/ro/terms/test#definition",
+            "engineVersion": "https://w3id.org/ro/terms/test#engineVersion",
+            "instance": "https://w3id.org/ro/terms/test#instance",
+            "resource": "https://w3id.org/ro/terms/test#resource",
+            "runsOn": "https://w3id.org/ro/terms/test#runsOn"
+        }
+    ],
+    "@graph": [
+        {
+            "@id": "ro-crate-metadata.json",
+            "@type": "CreativeWork",
+            "about": {
+                "@id": "./"
+            },
+            "conformsTo": {
+                "@id": "https://w3id.org/ro/crate/1.1"
+            }
+        },
+        {
+            "@id": "./",
+            "@type": "Dataset",
+            "datePublished": "2021-03-19T16:03:24.348879",
+            "hasPart": [
+                {
+                    "@id": "test/"
+                },
+                {
+                    "@id": "README.md"
+                },
+                {
+                    "@id": "test/README.md"
+                }
+            ],
+            "mainEntity": {
+                "@id": "https://raw.githubusercontent.com/galaxyproject/iwc/d796d175a7f3b531898a229090c6540f0409b075/workflows/sars-cov-2-variant-calling/sars-cov-2-pe-illumina-artic-variant-calling/pe-artic-variation.ga"
+            }
+        },
+        {
+            "@id": "test/",
+            "@type": "Dataset",
+            "about": [
+                {
+                    "@id": "#test1"
+                }
+            ]
+        },
+        {
+            "@id": "README.md",
+            "@type": "File"
+        },
+        {
+            "@id": "test/README.md",
+            "@type": "File"
+        },
+        {
+            "@id": "https://raw.githubusercontent.com/galaxyproject/iwc/d796d175a7f3b531898a229090c6540f0409b075/workflows/sars-cov-2-variant-calling/sars-cov-2-pe-illumina-artic-variant-calling/pe-artic-variation.ga",
+            "@type": [
+                "File",
+                "SoftwareSourceCode",
+                "ComputationalWorkflow"
+            ],
+            "name": "pe-artic-variation",
+            "programmingLanguage": {
+                "@id": "#galaxy"
+            }
+        },
+        {
+            "@id": "#galaxy",
+            "@type": "ComputerLanguage",
+            "identifier": {
+                "@id": "https://galaxyproject.org/"
+            },
+            "name": "Galaxy",
+            "url": {
+                "@id": "https://galaxyproject.org/"
+            },
+            "version": "v19_09"
+        },
+        {
+            "@id": "#test1",
+            "@type": "TestSuite",
+            "instance": [
+                {
+                    "@id": "#test1_1"
+                }
+            ],
+            "mainEntity": {
+                "@id": "https://raw.githubusercontent.com/galaxyproject/iwc/d796d175a7f3b531898a229090c6540f0409b075/workflows/sars-cov-2-variant-calling/sars-cov-2-pe-illumina-artic-variant-calling/pe-artic-variation.ga"
+            },
+            "name": "test1"
+        },
+        {
+            "@id": "#test1_1",
+            "@type": "TestInstance",
+            "name": "test1_1",
+            "resource": "github/crs4/iwc/builds",
+            "runsOn": {
+                "@id": "https://w3id.org/ro/terms/test#TravisService"
+            },
+            "url": "https://travis-ci.org"
+        },
+        {
+            "@id": "https://w3id.org/ro/terms/test#TravisService",
+            "@type": "TestService",
+            "name": "Travis CI",
+            "url": {
+                "@id": "https://www.travis-ci.com"
+            }
+        }
+    ]
+}
