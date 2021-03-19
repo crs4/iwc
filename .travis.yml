@@ -1,0 +1,8 @@
+language: python
+python: "3.6"
+cache: pip
+
+before_install: pip install planemo
+
+script:
+  - planemo test workflows/sars-cov-2-variant-calling/sars-cov-2-pe-illumina-artic-variant-calling
