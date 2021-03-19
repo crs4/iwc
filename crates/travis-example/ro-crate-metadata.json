@@ -18,19 +18,9 @@
     ],
     "@graph": [
         {
-            "@id": "ro-crate-metadata.json",
-            "@type": "CreativeWork",
-            "about": {
-                "@id": "./"
-            },
-            "conformsTo": {
-                "@id": "https://w3id.org/ro/crate/1.1"
-            }
-        },
-        {
             "@id": "./",
             "@type": "Dataset",
-            "datePublished": "2021-03-19T16:03:24.348879",
+            "datePublished": "2021-03-19T17:07:07.897181",
             "hasPart": [
                 {
                     "@id": "test/"
@@ -40,10 +30,23 @@
                 },
                 {
                     "@id": "test/README.md"
+                },
+                {
+                    "@id": "https://raw.githubusercontent.com/galaxyproject/iwc/d796d175a7f3b531898a229090c6540f0409b075/workflows/sars-cov-2-variant-calling/sars-cov-2-pe-illumina-artic-variant-calling/pe-artic-variation.ga"
                 }
             ],
             "mainEntity": {
                 "@id": "https://raw.githubusercontent.com/galaxyproject/iwc/d796d175a7f3b531898a229090c6540f0409b075/workflows/sars-cov-2-variant-calling/sars-cov-2-pe-illumina-artic-variant-calling/pe-artic-variation.ga"
+            }
+        },
+        {
+            "@id": "ro-crate-metadata.json",
+            "@type": "CreativeWork",
+            "about": {
+                "@id": "./"
+            },
+            "conformsTo": {
+                "@id": "https://w3id.org/ro/crate/1.1"
             }
         },
         {
@@ -70,10 +73,13 @@
                 "SoftwareSourceCode",
                 "ComputationalWorkflow"
             ],
-            "name": "pe-artic-variation",
+            "contentSize": "56967",
+            "encodingFormat": "text/plain; charset=utf-8",
+            "name": "pe-artic-variation.ga",
             "programmingLanguage": {
                 "@id": "#galaxy"
-            }
+            },
+            "url": "https://raw.githubusercontent.com/galaxyproject/iwc/d796d175a7f3b531898a229090c6540f0409b075/workflows/sars-cov-2-variant-calling/sars-cov-2-pe-illumina-artic-variant-calling/pe-artic-variation.ga"
         },
         {
             "@id": "#galaxy",
