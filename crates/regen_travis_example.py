@@ -13,6 +13,8 @@ def main():
     workflow = crate.add_workflow(WORKFLOW_ID, main=True, lang="galaxy",
                                   gen_cwl=False)
     workflow["name"] = WORKFLOW_ID.rsplit("/", 1)[-1]
+    crate.root_dataset["author"] = "Wolfgang Maier"
+    crate.root_dataset["isBasedOn"] = "https://github.com/iwc-workflows/sars-cov-2-pe-illumina-artic-variant-calling"
     suite = crate.add_test_suite(identifier="#test1")
     crate.add_test_instance(suite, TRAVIS_URL, resource=TRAVIS_RESOURCE,
                             service="travis", identifier="test1_1")
