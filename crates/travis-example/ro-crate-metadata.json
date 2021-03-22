@@ -21,7 +21,7 @@
             "@id": "./",
             "@type": "Dataset",
             "author": "Wolfgang Maier",
-            "datePublished": "2021-03-22T15:26:19.468995",
+            "datePublished": "2021-03-22T15:50:08.824705",
             "hasPart": [
                 {
                     "@id": "test/"
@@ -37,6 +37,7 @@
                 }
             ],
             "isBasedOn": "https://github.com/iwc-workflows/sars-cov-2-pe-illumina-artic-variant-calling",
+            "license": "MIT",
             "mainEntity": {
                 "@id": "https://raw.githubusercontent.com/galaxyproject/iwc/d796d175a7f3b531898a229090c6540f0409b075/workflows/sars-cov-2-variant-calling/sars-cov-2-pe-illumina-artic-variant-calling/pe-artic-variation.ga"
             }
